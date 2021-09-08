@@ -7,6 +7,10 @@ document.querySelector('button').addEventListener('click', () => {
 const createNotionCode = (value) => {
   const arrayOfSkills = value.split('\n');
 
+  arrayOfSkills.forEach((element, index) => {
+    arrayOfSkills[index] = `prop("${element}")`;
+  });
+
   const arrayOfSkillsLevels = [[],[],[]];
 
   arrayOfSkills.forEach(element => {
