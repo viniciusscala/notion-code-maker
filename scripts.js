@@ -33,7 +33,7 @@ const createNotionCode = (value) => {
 
   // console.log('arrayOfSkillsString', arrayOfSkillsString);
 
-  const finalResult = `${arrayOfSkillsString[0]} ? ( (${arrayOfSkillsString[1]} ? ( ${arrayOfSkillsString[2]} ? (2 : 3) : 1)) : 0)`;
+  const finalResult = `((${arrayOfSkillsString[0]}) ? (((${arrayOfSkillsString[1]}) ? (((${arrayOfSkillsString[2]}) ? (3) : (2))) : (1))) : (0))`;
   console.log('finalResult', finalResult);
   return finalResult;
 };
@@ -62,3 +62,29 @@ const createNotionCode = (value) => {
 //      (3) and (3) ? (2 : 3) : 1
 //   )) : 0
 // )
+
+// prop("CSS/Styled Components(1): seletores") and 
+// prop("CSS/Styled Components(1): Estilos de eventos") and 
+// prop("CSS/Styled Components(1): position") and 
+// prop("CSS/Styled Components(1): display flex") ? (
+//   (prop("CSS/Styled Components(2): Unidades de medida") and 
+//   prop("CSS/Styled Components(2): props") and 
+//   prop("CSS/Styled Components(2): SASS") and 
+//   prop("CSS/Styled Components(2): Display grid") ? (
+//     prop("CSS/Styled Components(3): Animações complexas") and 
+//     prop("CSS/Styled Components(3): Herança de componentes") ? (
+//       2 : 
+//       3
+//     ) : 
+//   1)) :
+//   0
+// )
+
+
+
+
+// ${arrayOfSkillsString[0]} ? (${arrayOfSkillsString[1]} ? ${arrayOfSkillsString[2]} ? (2 : 3) : 1) : 0
+
+// ${arrayOfSkillsString[0]} ? (${arrayOfSkillsString[1]} ? (${arrayOfSkillsString[2]} ? (3) : (2)) : (1)) : (0)
+
+// ((${arrayOfSkillsString[0]}) ? (((${arrayOfSkillsString[1]}) ? (((${arrayOfSkillsString[2]}) ? (3) : (2))) : (1))) : (0))
